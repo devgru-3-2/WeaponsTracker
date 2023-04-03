@@ -1,0 +1,108 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_dealer",
+				"type": "address"
+			}
+		],
+		"name": "addDealer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_distributor",
+				"type": "address"
+			}
+		],
+		"name": "addDistributor",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_manufacturer",
+				"type": "address"
+			}
+		],
+		"name": "createWeapon",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "getWeapon",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "serialNumber",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "manufacturer",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "distributor",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "dealer",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "isAuthentic",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_serialNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "verifyAuthenticity",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

@@ -1,0 +1,23 @@
+{
+    "name": "WeaponTracking",
+    "version": "1.0.0",
+    "description": "A blockchain-based application for tracking weapons from production to delivery and preventing counterfeits.",
+    "main": "app.js",
+    "scripts": {
+        "test": "truffle test",
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "@truffle/hdwallet-provider": "^2.1.9",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.9",
+        "express": "^4.17.1",
+        "truffle-hdwallet-provider": "^1.0.17",
+        "web3": "^1.5.2"
+    },
+    "devDependencies": {
+        "chai": "^4.3.4",
+        "truffle": "^5.4.0"
+    },
+    "license": "MIT"
+}

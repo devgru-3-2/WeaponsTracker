@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weapon Tracker</title>
+    <style type = "text/css" href = /style.css></style>
+</head>
+<body>
+    <h1>Weapon Tracker</h1>
+    <h2>Create Weapon</h2>
+    <form method="post" action="/addweapon">
+        <label for="weaponId">Weapon ID:</label>
+        <input type="text" id="weaponId" name="weaponId"><br>
+
+        <label for="weaponName">Weapon Name:</label>
+        <input type="text" id="weaponName" name="weaponName"><br>
+
+        <label for="manufacturer">Manufacturer:</label>
+        <input type="text" id="manufacturer" name="manufacturer"><br>
+
+        <label for="serialNumber">Serial Number:</label>
+        <input type="text" id="serialNumber" name="serialNumber"><br>
+
+        <input type="submit" value="Create Weapon">
+    </form>
+
+    <h2>Get Weapon Details</h2>
+    <form method="post" action="/getweapondetails">
+        <label for="weaponId">Weapon ID:</label>
+        <input type="text" id="weaponId" name="weaponId"><br>
+
+        <input type="submit" value="Get Weapon Details">
+    </form>
+
+    <h2>Verify Weapon Authenticity</h2>
+    <form method="post" action="/verifyauthenticity">
+        <label for="weaponId">Weapon ID:</label>
+        <input type="text" id="weaponId" name="weaponId"><br>
+
+        <label for="dealerId">Dealer ID:</label>
+        <input type="text" id="dealerId" name="dealerId"><br>
+
+        <input type="submit" value="Verify Authenticity">
+    </form>
+
+    <h2>Add Dealer</h2>
+    <form method="post" action="/adddealer">
+        <label for="dealerId">Dealer ID:</label>
+        <input type="text" id="dealerId" name="dealerId"><br>
+
+        <label for="dealerName">Dealer Name:</label>
+        <input type="text" id="dealerName" name="dealerName"><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br>
+
+        <input type="submit" value="Add Dealer">
+    </form>
+
+    <h2>Add Distributor</h2>
+    <form method="post" action="/adddistributor">
+        <label for="distributorId">Distributor ID:</label>
+        <input type="text" id="distributorId" name="distributorId"><br>
+
+        <label for="distributorName">Distributor Name:</label>
+        <input type="text" id="distributorName" name="distributorName"><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br>
+
+        <input type="submit" value="Add Distributor">
+    </form>
+</body>
+</html>
